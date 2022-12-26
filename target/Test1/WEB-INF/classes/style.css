@@ -1,0 +1,132 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+* { padding: 0; margin: 0; }
+body { background: #1abc9c; font-family: 'Lato', sans-serif; letter-spacing: 1px; font-weight: bold;}
+ 
+header {
+    text-align: justify;
+    height: 3em 7%;
+    padding: 2em 3%;
+    background: #2c3e50;
+    color: #fff;
+}
+ 
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+ 
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+ 
+header > div {
+    height: 100%;
+}
+ 
+header > div::before {
+    content: '';
+    height: 100%;
+}
+ 
+header > div h1 {
+    font-size: 3em;
+    font-style: italic;
+}
+ 
+.nav_header{
+    
+    width: 100%;
+    text-align: right;
+}
+
+header a:hover {
+    margin: 5% 0.5em;
+    border-radius: 5%;
+    background: #1abc9c;
+    text-align: center;
+    padding: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: wheat;
+}
+
+
+
+header a {
+    transition: background 0.5s ease;
+    margin: 5% 0.5em;
+    border-radius: 5%;
+    background: #3E4347;
+    text-align: center;
+    padding: 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #F5E1A6;
+}
+
+ 
+header nav a:last-child {
+    padding-right: 0;
+}
+ 
+@media screen and (max-width: 720px){
+     
+    header {
+        height: auto;
+    }
+     
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+     
+}
+
+#link_button{
+width: fit-content;
+height: fit-content;
+}
+
+.div_buttons{
+    display: block;
+    text-align: right;
+}
+
+.table_col {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    width: 100%;
+    background: white;
+    text-align: left;
+    border-collapse: collapse;
+    color: #000000;
+  }
+  .table_col th:first-child, .table_col td:first-child {
+  color: #000000;
+  border-left: none;
+  }
+  .table_col th {
+    text-shadow: 1px 0 1px #000;
+  font-weight: normal;
+  font-size: larger;
+  border-bottom: 2px solid #F5E1A6;
+  border-right: 20px solid white;
+  border-left: 20px solid white;
+  padding: 8px 10px;
+  }
+  .table_col td {
+  border-right: 20px solid white;
+  border-left: 20px solid white;
+  padding: 12px 10px;
+  color: #8b8e91;
+  }
